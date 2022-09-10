@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
-*
 *main - Begin Here
 *Return: Value 0 (true)
 **/
