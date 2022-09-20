@@ -1,18 +1,26 @@
 #include "main.h"
 /**
-* puts2 - print alternating chars of string
-* @str: string
-* Return: void
+* puts2 - Use pointer to change value in memory
+* @str: Pointer to string location
+*Return: Null/Void
 */
 void puts2(char *str)
 {
-int i;
-i = 0;
-while (str[i] != '\0')
+int len = 0;
+char *y = str;
+int z;
+while (*y != '\0')
 {
-if (i % 2 == 0)
-_putchar(str[i]);
-i++;
+y++;
+len++;
 }
-_putchar('\n');
+len--;
+for (z = 0 ; z <= len ; z++)
+{
+if (z % 2 == 0)
+{
+putchar(str[z]);
+}
+}
+putchar('\n');
 }
